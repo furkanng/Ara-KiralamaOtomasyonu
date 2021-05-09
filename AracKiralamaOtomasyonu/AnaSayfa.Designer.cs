@@ -30,6 +30,7 @@ namespace AracKiralamaOtomasyonu
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaSayfa));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@ namespace AracKiralamaOtomasyonu
             this.button7 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.button8 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +62,9 @@ namespace AracKiralamaOtomasyonu
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button4.ImageIndex = 3;
+            this.button4.ImageList = this.ımageList1;
             this.button4.Location = new System.Drawing.Point(3, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(117, 109);
@@ -74,6 +77,9 @@ namespace AracKiralamaOtomasyonu
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button5.ImageIndex = 4;
+            this.button5.ImageList = this.ımageList1;
             this.button5.Location = new System.Drawing.Point(126, 3);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(133, 109);
@@ -85,6 +91,9 @@ namespace AracKiralamaOtomasyonu
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.ImageIndex = 0;
+            this.button1.ImageList = this.ımageList1;
             this.button1.Location = new System.Drawing.Point(265, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 109);
@@ -96,6 +105,9 @@ namespace AracKiralamaOtomasyonu
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button3.ImageIndex = 4;
+            this.button3.ImageList = this.ımageList1;
             this.button3.Location = new System.Drawing.Point(388, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(117, 109);
@@ -107,6 +119,9 @@ namespace AracKiralamaOtomasyonu
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.White;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button6.ImageIndex = 6;
+            this.button6.ImageList = this.ımageList1;
             this.button6.Location = new System.Drawing.Point(511, 3);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(117, 109);
@@ -118,6 +133,9 @@ namespace AracKiralamaOtomasyonu
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.White;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button7.ImageIndex = 5;
+            this.button7.ImageList = this.ımageList1;
             this.button7.Location = new System.Drawing.Point(634, 3);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(117, 109);
@@ -129,6 +147,9 @@ namespace AracKiralamaOtomasyonu
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.ImageIndex = 2;
+            this.button2.ImageList = this.ımageList1;
             this.button2.Location = new System.Drawing.Point(757, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 109);
@@ -136,21 +157,19 @@ namespace AracKiralamaOtomasyonu
             this.button2.Text = "Çıkış";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // ımageList1
             // 
-            this.ımageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.ımageList1.ImageSize = new System.Drawing.Size(40, 45);
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
             this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(486, 265);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.ımageList1.Images.SetKeyName(0, "arackayıt.png");
+            this.ımageList1.Images.SetKeyName(1, "araclisteleme.png");
+            this.ımageList1.Images.SetKeyName(2, "cıkış.jpg");
+            this.ımageList1.Images.SetKeyName(3, "müsteriekleme.png");
+            this.ımageList1.Images.SetKeyName(4, "müsterilisteleme.png");
+            this.ımageList1.Images.SetKeyName(5, "satıslar.png");
+            this.ımageList1.Images.SetKeyName(6, "sözlesme.png");
             // 
             // AnaSayfa
             // 
@@ -160,7 +179,6 @@ namespace AracKiralamaOtomasyonu
             this.BackgroundImage = global::AracKiralamaOtomasyonu.Properties.Resources.rent_a_car_dukkani_acmak;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(893, 511);
-            this.Controls.Add(this.button8);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "AnaSayfa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -181,7 +199,6 @@ namespace AracKiralamaOtomasyonu
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ImageList ımageList1;
-        private System.Windows.Forms.Button button8;
     }
 }
 

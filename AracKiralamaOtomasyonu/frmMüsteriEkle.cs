@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace AracKiralamaOtomasyonu
 {
-    public partial class AnaSayfa : Form
+    public partial class frmMüsteriEkle : Form
     {
-        public AnaSayfa()
+        public frmMüsteriEkle()
         {
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
